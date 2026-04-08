@@ -63,3 +63,50 @@ body {
 .search-container button img {
 	width: 25px;
 }
+
+.weather-text {
+	font-size: 1rem;
+	margin: 25px 0px -25px 0px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.weather-icon {
+	width: 170px;
+	margin-top: 30px;
+}
+
+.weather-container h1 {
+	font-size: 80px;
+	font-weight: 600;
+}
+
+.weather-container h2 {
+	font-size: 45px;
+	font-weight: 400;
+	margin-top: -10px;
+}
+
+.detail-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+	margin-top: 50px;
+}
+
+.col {
+	display: flex;
+	align-items: center;
+	text-align: left;
+}
+
+.col img {
+	width: 40px;
+	margin-right: 10px;
+}
+
+.detail-container .info {
+	font-size: 28px;
+	margin-top: -6px;
+}

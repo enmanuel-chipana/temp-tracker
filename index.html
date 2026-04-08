@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Temp Tracker</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="src/img/logo.png" type="image/x-icon">
 </head>
 <body>
 	<div class="main-container">
@@ -19,14 +20,45 @@
 				<img 
 					src="src/img/buscar.png"
 					alt="lupa"
-				>
+				/>
 			</button>
 		</div>
-		<div class="info-container">
-
+		<div class="weather-container">
+			<p class="weather-text">
+				Parcialmente nublado
+			</p>
+			<img
+				src="src/img/clima-ejemplo.webp"
+				class="weather-icon"
+				alt="nube"
+			/>
+			<h1 class="temp">22°c</h1>
+			<h2 class="city">Huancayo</h2>
+			<div class="detail-container">
+				<div class="col">
+					<img 
+						src="src/img/humedad.png"
+						alt="gota"
+					/>
+					<div>
+						<p class="info">50%</p>
+						<p>Humedad</p>
+					</div>
+				</div>
+				<div class="col">
+					<img 
+						src="src/img/viento.png"
+						alt="viento"
+					/>
+					<div>
+						<p class="info">15 km/h</p>
+						<p>Viento</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
-  <script src="script.js"></script>
+  <script src="script.js" ></script>
 </body>
 </html>

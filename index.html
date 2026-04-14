@@ -9,21 +9,26 @@
 </head>
 <body>
 	<div class="main-container">
-		<div class="search-container">
+		<form class="search-container" id="search-form">
 			<input 
 				type="text"
 				placeholder="Ingresa el nombre de la ciudad"
 				spellcheck="false"
-				id="search"
+				autocomplete="false"
+				name="search"
 			/>
-			<button onclick="getWeatherInfo()">
+			<button type="submit">
 				<img 
 					src="src/img/buscar.png"
 					alt="lupa"
 				/>
 			</button>
+		</form>
+		<div class="loading-container" id="loader">
+			<div class="primary-loading">
+			</div>
 		</div>
-		<div class="weather-container">
+		<div id="weather" class="weather-container">
 			<p class="weather-text">
 				Parcialmente nublado
 			</p>
@@ -41,7 +46,7 @@
 						alt="gota"
 					/>
 					<div>
-						<p class="info">50%</p>
+						<p class="info" id="humidity">50%</p>
 						<p>Humedad</p>
 					</div>
 				</div>
@@ -51,13 +56,16 @@
 						alt="viento"
 					/>
 					<div>
-						<p class="info">15 km/h</p>
+						<p class="info" id="wind">15 km/h</p>
 						<p>Viento</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<footer id="footer">
+		<p>Desarrollado por</p>
+	</footer>
 
   <script src="script.js" ></script>
 </body>
